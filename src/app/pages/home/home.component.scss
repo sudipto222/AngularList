@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.MainHomeContainer {
+  margin: auto;
+  width: 100%;
+  padding: 30px;
+}
+.Card {
+  width: 80%;
+  height: 190px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: rgb(35, 40, 44);
+  border-radius: 20px;
+  border: 3px solid rgb(143, 143, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  transition-duration: 0.3s;
+  box-shadow: 0px 0px 21px 1px rgb(41 60 174 / 75%);
+  -webkit-box-shadow: 0px 0px 21px 1px rgb(41 60 174 / 75%);
+  -moz-box-shadow: 0px 0px 21px 1px rgb(41 60 174 / 75%);
+}
+.Card:hover {
+  transition-duration: 0.3s;
+  box-shadow: 0px 0px 21px 1px rgb(186 210 255 / 75%);
+  -webkit-box-shadow: 0px 0px 21px 1px rgb(186 210 255 / 75%);
+  -moz-box-shadow: 0px 0px 21px 1px rgb(186 210 255 / 75%);
+}
+.ContainerOne {
+  width: 22%;
+  //   border: 1px solid white;
+  height: 100%;
+  padding: 20px;
+  h1 {
+    color: white;
+  }
+}
+.ContainerTwo {
+  width: 22%;
+  //   border: 1px solid white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.BtnContainer {
+  width: 90%;
+  margin: auto;
+  height: fit-content;
+  h1 {
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: 10px;
+  }
+}
+.DownloadBtnContainer {
+  height: 35px;
+  width: 90%;
+  border: 1px solid white;
+  margin: auto;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  display: flex;
+  justify-content: center;
+  button.DownloadBtnSquare {
+    height: 100%;
+    border: none;
+    width: 45%;
+    span {
+      font-size: 17px;
+      margin-top: 7px;
+    }
+  }
+  button.DownloadBtnRound {
+    height: 100%;
+    width: 55%;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 12px;
+  }
+}
+.UploadBtnContainer {
+  height: 35px;
+  width: 90%;
+  border: 1px solid white;
+  margin: auto;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  display: flex;
+  justify-content: center;
+  button.UploadBtnSquare {
+    height: 100%;
+    border: 1px solid white;
+    width: 45%;
+    border: none;
+    span {
+      font-size: 17px;
+      margin-top: 7px;
+    }
+  }
+  button.UploadBtnRound {
+    height: 100%;
+    width: 55%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 12px;
+  }
+}
+.ContainerThree {
+  width: 22%;
+  height: 100%;
+  padding: 10px;
+  padding-top: 20px;
+  li {
+    font-weight: 400;
+    color: white;
+    font-size: 13px;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+.ContainerFour {
+  width: 34%;
+  //   border: 1px solid white;
+  height: 100%;
+  display: flex;
+  text-align: right;
+  padding: 20px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  h1 {
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 5px;
+  }
+  button.ToTariffButton {
+    width: 70%;
+    background-color: transparent;
+    color: white;
+    height: 40px;
+    border: 1px solid white;
+    // border: none;
+    outline: none;
+    font-size: 14px;
+  }
+}
+thead th {
+  cursor: pointer;
+  margin-right: 15px;
+  margin-left: 15px;
+
+  span {
+    visibility: hidden;
+  }
+
+  &.active {
+    color: white;
+
+    span {
+      visibility: visible;
+    }
+  }
+}
+
+.filterButtonsContainer {
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.filterBtn {
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+  width: 150px;
+  font-size: 19px;
+  font-weight: 700;
+  background-color: #29bbd0;
+  border: none;
+  outline: none;
+  transition-duration: 0.3s;
+  box-shadow: 0px 0px 21px 1px rgb(41 60 174 / 75%);
+  -webkit-box-shadow: 0px 0px 21px 1px rgb(41 60 174 / 75%);
+  span {
+    color: red;
+    visibility: hidden;
+  }
+
+  &.active {
+    color: white;
+
+    span {
+      color: red;
+      visibility: visible;
+    }
+  }
+}
+.filterBtn:hover {
+  transition-duration: 0.3s;
+  box-shadow: 0px 0px 21px 1px rgb(186 210 255 / 75%);
+  -webkit-box-shadow: 0px 0px 21px 1px rgb(186 210 255 / 75%);
+  -moz-box-shadow: 0px 0px 21px 1px rgb(186 210 255 / 75%);
+}
+
+.SearchBarContainer {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  input {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 3px solid rgb(35, 167, 211);
+    padding-left: 20px;
+    color: rgb(35, 167, 211);
+    height: 50px;
+    width: 250px;
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .ContainerThree {
+    display: none;
+    visibility: hidden;
+  }
+  .ContainerOne {
+    width: 30%;
+  }
+  .ContainerTwo {
+    width: 30%;
+  }
+  .ContainerFour {
+    width: 40%;
+  }
+  .filterBtn {
+    width: 120px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Card {
+    width: 95%;
+    margin-top: 20px;
+  }
+  .filterBtn {
+    width: 100px;
+    font-size: 14px;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .filterButtonsContainer {
+    width: 90%;
+  }
+  .filterBtn {
+    width: 20%;
+  }
+  .ContainerOne {
+    h1 {
+      font-size: 18px;
+    }
+  }
+  .ContainerFour {
+    h1 {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .MainHomeContainer {
+    padding: 10px;
+  }
+  .UploadBtnContainer {
+    button.UploadBtnSquare {
+      display: none;
+      visibility: hidden;
+    }
+    button.UploadBtnRound {
+      width: 100%;
+      font-size: 10px;
+    }
+  }
+  .DownloadBtnContainer {
+    button.DownloadBtnSquare {
+      display: none;
+      visibility: hidden;
+    }
+    button.DownloadBtnRound {
+      width: 100%;
+      font-size: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .filterButtonsContainer {
+    width: 95%;
+  }
+  .filterBtn {
+    width: 20%;
+    font-size: 10px;
+    margin: 5px;
+  }
+  .ContainerOne {
+    padding: 10px;
+    h1 {
+      font-size: 14px;
+    }
+  }
+  .ContainerFour {
+    h1 {
+      font-size: 14px;
+    }
+  }
+  .Card {
+    width: 99%;
+  }
+  .UploadBtnContainer {
+    button.UploadBtnSquare {
+      display: none;
+      visibility: hidden;
+    }
+    button.UploadBtnRound {
+      width: 100%;
+      font-size: 10px;
+    }
+  }
+  // .hide {
+  //   display: none;
+  //   visibility: hidden;
+  // }
+  .DownloadBtnContainer {
+    button.DownloadBtnSquare {
+      display: none;
+      visibility: hidden;
+    }
+    button.DownloadBtnRound {
+      width: 100%;
+      font-size: 10px;
+    }
+  }
+  .BtnContainer {
+    padding: 0px;
+    margin: 2px;
+  }
+  .ContainerFour {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ContainerOne {
+    width: 35%;
+    h1 {
+      padding-top: 70px;
+    }
+  }
+  .ContainerTwo {
+    width: 25%;
+  }
+  .ContainerFour {
+    padding: 0px;
+    padding-right: 5px;
+    button.ToTariffButton {
+      font-size: 12px;
+    }
+  }
+}

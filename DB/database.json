@@ -1,0 +1,70 @@
+{
+  "tariff-data": [
+    {
+      "tariffName": "Tariff Name 1",
+      "download": "12",
+      "upload": "6",
+      "taiffBenefits": [
+        "Tariff Benefit 1",
+        "Tariff Benefit 2",
+        "Tariff Benefit 3"
+      ],
+      "price": "223093"
+    },
+    {
+      "tariffName": "Tariff Name 2",
+      "download": "14",
+      "upload": "7",
+      "taiffBenefits": [
+        "Tariff Benefit 4",
+        "Tariff Benefit 5",
+        "Tariff Benefit 6"
+      ],
+      "price": "123093"
+    },
+    {
+      "tariffName": "Tariff Name 3",
+      "download": "10",
+      "upload": "2",
+      "taiffBenefits": [
+        "Tariff Benefit 7",
+        "Tariff Benefit 8",
+        "Tariff Benefit 9"
+      ],
+      "price": "345093"
+    },
+    {
+      "tariffName": "Tariff Name 4",
+      "download": "11",
+      "upload": "16",
+      "taiffBenefits": [
+        "Tariff Benefit 10",
+        "Tariff Benefit 11",
+        "Tariff Benefit 12"
+      ],
+      "price": "112093"
+    },
+    {
+      "tariffName": "Tariff Name 5",
+      "download": "19",
+      "upload": "10",
+      "taiffBenefits": [
+        "Tariff Benefit 13",
+        "Tariff Benefit 14",
+        "Tariff Benefit 15"
+      ],
+      "price": "456093"
+    },
+    {
+      "tariffName": "Tariff Name 6",
+      "download": "30",
+      "upload": "20",
+      "taiffBenefits": [
+        "Tariff Benefit 16",
+        "Tariff Benefit 17",
+        "Tariff Benefit 18"
+      ],
+      "price": "931193"
+    }
+  ]
+}

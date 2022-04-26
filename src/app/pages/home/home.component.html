@@ -1,0 +1,56 @@
+<div class="SearchBarContainer">
+  <input
+    type="text"
+    [(ngModel)]="searchText"
+    placeholder="Enter Search Query Here !"
+  />
+</div>
+<div class="filterButtonsContainer">
+  <button class="filterBtn" (click)="setOrder('tariffName')">Name</button>
+  <button class="filterBtn" (click)="setOrder('download')">Download</button>
+  <button class="filterBtn" (click)="setOrder('upload')">Upload</button>
+  <button class="filterBtn" (click)="setOrder('price')">Price</button>
+</div>
+<div class="MainHomeContainer">
+  <div
+    class="Card"
+    *ngFor="
+      let plan of collection
+        | orderBy: order:reverse:caseInsensitive
+        | filter: searchText
+    "
+  >
+    <div class="ContainerOne">
+      <h1>{{ plan.tariffName }}</h1>
+    </div>
+    <div class="ContainerTwo">
+      <div class="BtnContainer">
+        <h1>Download</h1>
+        <div class="DownloadBtnContainer">
+          <button class="DownloadBtnSquare">
+            <span class="material-icons"> south </span>
+          </button>
+          <button class="DownloadBtnRound">{{ plan.download }} Mbit/s</button>
+        </div>
+      </div>
+      <div class="BtnContainer hide">
+        <h1>Upload</h1>
+        <div class="UploadBtnContainer">
+          <button class="UploadBtnSquare">
+            <span class="material-icons"> north </span>
+          </button>
+          <button class="UploadBtnRound">{{ plan.upload }} Mbit/s</button>
+        </div>
+      </div>
+    </div>
+    <div class="ContainerThree">
+      <ul>
+        <li *ngFor="let benefit of plan.taiffBenefits">{{ benefit }}</li>
+      </ul>
+    </div>
+    <div class="ContainerFour">
+      <h1>€{{ plan.price }}</h1>
+      <button class="ToTariffButton">To Tariff ></button>
+    </div>
+  </div>
+</div>
